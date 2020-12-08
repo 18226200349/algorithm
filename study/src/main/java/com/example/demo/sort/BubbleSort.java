@@ -18,6 +18,7 @@ public class BubbleSort {
         Long startTime=System.currentTimeMillis();
         for (int i=0;i<sortArr.length;i++){
             //每次比较会将更大值放到更后面，减少一次两值之间的比较
+            //当没有值进行交换时，说明整个
             boolean flag=true;
             for (int j = 0; j < sortArr.length - 1-i; j++) {
                 if(sortArr[j]>sortArr[j+1]){
@@ -28,6 +29,7 @@ public class BubbleSort {
                     flag=false;
                 }
             }
+            //每次内循环判断是否有数据交换，若有，说明还存在未排序完成的数据，继续下一次循环，若无，说明已经有序
             if(flag){
                 break;
             }

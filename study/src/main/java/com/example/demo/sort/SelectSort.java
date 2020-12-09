@@ -11,8 +11,9 @@ public class SelectSort {
             for(int j=i;j<sortArr.length;j++){
                 if(sortArr[j] < sortArr[min]) min=j;
             }
-            //如果当前值不是最小值进行交换
+            //如果当前值不是最小值才可进行交换
             if(min != i){
+                //交换获取的最小值和当前值
                 int temp=sortArr[i];
                 sortArr[i]=sortArr[min];
                 sortArr[min]=temp;

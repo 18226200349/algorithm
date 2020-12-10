@@ -1,5 +1,5 @@
 package com.example.demo.sort;
-
+//原理链接 https://time.geekbang.org/column/article/41913
 public class MergeSort {
 
     public static void main(String[] args) {
@@ -29,7 +29,6 @@ public class MergeSort {
         while(k <= high){
             tmp[i++] = arr[k++];
         }
-
         for(int t=0;t<i;t++){
             arr[low+t] = tmp[t];
         }

@@ -16,7 +16,7 @@ public class Quicksort {
         quickSortInternally(a, p, q-1);
         quickSortInternally(a, q+1, r);
     }
-
+    //分区函数
     private static int partition(int[] a, int p, int r) {
         int pivot = a[r];
         int i = p;

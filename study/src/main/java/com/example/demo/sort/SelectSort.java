@@ -1,7 +1,7 @@
 package com.example.demo.sort;
 
 public class SelectSort {
-
+    //时间复杂度O(n*n) 空间复杂度 O(1)
     public static void main(String[] args) {
         int[] sortArr=new int[]{3,6,5,7,4};
         for(int i=0;i<sortArr.length;i++){

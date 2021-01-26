@@ -4,6 +4,7 @@ package com.example.demo.sort;
 //归并排序的顺序来自从下往上合并的一步一步排序
 //快速排序来自从上至下分区来排序
 public class Quicksort {
+    //时间复杂度 O(nlogn) 空间复杂度 O(1) 注:使用原地排序算法
 
     // 快速排序，a是数组，n表示数组的大小
     public static void quickSort(int[] a, int n) {

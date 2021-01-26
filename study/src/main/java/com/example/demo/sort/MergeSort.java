@@ -1,5 +1,6 @@
 package com.example.demo.sort;
 //原理链接 https://time.geekbang.org/column/article/41913
+//时间复杂度O(nlogn) 空间复杂度 O(nlogn)
 public class MergeSort {
 
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package com.example.demo.sort;
 
 import java.util.Random;
 public class BubbleSort {
-
+    //时间复杂度O(n*n) 空间复杂度 O(1)
     public static void main(String[] args) {
         int[] sortArr=new int[100000];
         for (int i = 0; i < sortArr.length; i++) {
@@ -18,7 +18,7 @@ public class BubbleSort {
         Long startTime=System.currentTimeMillis();
         for (int i=0;i<sortArr.length;i++){
             //每次比较会将更大值放到更后面，减少一次两值之间的比较
-            //当没有值进行交换时，说明整个
+            //当没有值进行交换时，说明整个数组顺序已经排序完成
             boolean flag=true;
             for (int j = 0; j < sortArr.length - 1-i; j++) {
                 if(sortArr[j]>sortArr[j+1]){

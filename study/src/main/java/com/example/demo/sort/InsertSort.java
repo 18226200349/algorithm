@@ -3,9 +3,9 @@ package com.example.demo.sort;
 import java.util.Random;
 
 public class InsertSort {
+    //时间复杂度O(n*n) 空间复杂度 O(1)
     public static void main(String[] args) {
         int[] sortArr=new int[]{3,6,5,7,4};
-//       e
         //0位置的数据作为已排序空间数据
         for (int i = 1; i <sortArr.length ; i++) {
             //第二个值，未排序空间第一个值，每循环一次往后拿一个值

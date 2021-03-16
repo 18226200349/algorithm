@@ -26,7 +26,7 @@ public class TwoThreadOrderPrint {
 
         t2 = new Thread(() -> {
             while (curr <= SUM) {
-                // 一上来先阻塞自己
+                // 一上来先阻塞自己,被唤醒直接执行下面的代码
                 LockSupport.park();
                 // 被唤醒之后从这一行开始执行(醒来之后再判断一下是否满足条件)
                 if (curr <= SUM) {

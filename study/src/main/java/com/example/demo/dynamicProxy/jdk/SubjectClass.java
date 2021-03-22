@@ -1,4 +1,4 @@
-package com.example.demo.dynamicProxy;
+package com.example.demo.dynamicProxy.jdk;
 
 /**
  * 代理对象
